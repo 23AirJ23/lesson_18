@@ -389,7 +389,7 @@ a.header__logo:hover {
       font-size: 34px;
    }
    .info-main{
-      grid-template: minmax(auto, 99px) minmax(auto, 150px) minmax(auto, 122px) / minmax(auto, 425px);
+      grid-template: minmax(auto, 99px) minmax(auto, 200px) minmax(auto, 122px) / minmax(auto, 425px);
    }
    .info-main__buttons a:not(:last-child){
       margin-bottom: 10px;
@@ -397,8 +397,16 @@ a.header__logo:hover {
    .achievments__number {
       font-size: 26px;
    }
+   .info-main__title{
+      grid-row: 2/3;
+      align-items: start;
+      margin-bottom: 10px;
+   }
    .sub-title h2{
       font-size: 26px;
+   }
+   .achievments__item:not(:last-child)::after{
+      display: none;
    }
 }
 
